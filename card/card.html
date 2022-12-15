@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: flex; align-items: center; justify-content:space-around;
+            height: 70vh; background-color: blanchedalmond;
+        }
+        .card{
+            background-color: rgb(110, 235, 106);
+            overflow: hidden;
+            border-radius: 16px;
+            width: 20%;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            cursor: pointer;
+        }
+        .card .img{
+            width: 300px; height: 170px;
+            transition: 0.5s;
+        }
+        .card:hover .img{
+            width: 440px;
+            transition: 0.5s;
+        }
+        .card .content{
+            padding: 0 20px;
+            overflow: hidden;
+            height: 0;
+            transition: 0.5s;
+        }
+        .card:hover .content{
+            padding: 20px;
+            height: 180px;
+            transition: 0.5s;
+        }
+        .card .arrow{
+            padding-bottom: 15px; font-size: 28px; transform: rotate(-180deg); transition: 0.5s;
+        }
+        .card:hover .arrow{
+            transform: rotate(0); transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img" style="background-image: url(image/www.png); background-position: center; background-size: cover;">
+            </div>
+
+            <div class="content">
+                <span class="title">Desenvolvimento Web</span>
+                <p class="desc">O desenvolvimento web compreende a criação de sistemas que são disponibilizados através da internet, como os sites, plataformas, redes sociais e e-commerces. Desse modo, o código é hospedado em um servidor e requisitado pelo navegador quando uma pessoa usuária realiza o acesso.</p>
+            </div>
+
+            <div class="arrow">
+                <span>&#8593;</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img" style="background-image: url(image/mobileapp.png); background-position: center; background-size: cover;">
+                
+            </div>
+
+            <div class="content">
+                <span class="title">Desenvolvimento Mobile</span>
+                <p class="desc">Esta é a vertente da programação responsável por criar aplicativos móveis. Os aplicativos criados podem ser específicos para um sistema operacional, Android ou iOS, ou multiplataforma, em que uma mesma base de código é utilizada em ambos os sistemas.</p>
+            </div>
+
+            <div class="arrow">
+                <span>&#8593;</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img" style="background-image: url(image/jogo.jpg); background-position: center; background-size: cover;">
+            </div>
+
+            <div class="content">
+                <span class="title">Desenvolvimento de Jogos</span>
+                <p class="desc">Trata-se da criação da lógica de um jogo e a integração com a interface gráfica. Os jogos criados podem ser distribuídos para plataformas focadas em smartphones, computadores e videogames.</p>
+            </div>
+
+            <div class="arrow">
+                <span>&#8593;</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img" style="background-image: url(image/desktop1.png); background-position: center; background-size: cover;">
+            </div>
+
+            <div class="content">
+                <span class="title">Desenvolvimento Desktop</span>
+                <p class="desc">O desenvolvimento desktop se refere a softwares que precisam ser instalados em um computador. Um sistema operacional, editor de texto e ferramentas de edição de imagens e vídeos são exemplos desses sistemas.</p>
+            </div>
+
+            <div class="arrow">
+                <span>&#8593;</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
